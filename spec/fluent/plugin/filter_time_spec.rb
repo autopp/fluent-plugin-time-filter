@@ -1,7 +1,5 @@
 require 'spec_helper'
 require 'timecop'
-require 'fluent/test'
-require 'fluent/test/filter_test'
 
 describe Fluent::TimeFilter do
   before { Fluent::Test.setup }
