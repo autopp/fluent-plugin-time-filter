@@ -3,7 +3,7 @@ require 'timecop'
 require 'fluent/test'
 require 'fluent/test/filter_test'
 
-describe Fluent::Plugin::TimeFilter do
+describe Fluent::TimeFilter do
   before { Fluent::Test.setup }
 
   let(:d) do

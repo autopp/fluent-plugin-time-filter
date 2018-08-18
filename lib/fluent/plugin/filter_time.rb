@@ -14,12 +14,12 @@
 #    limitations under the License.
 #
 
-require 'fluent/plugin/filter'
+require 'fluent/filter'
 
 module Fluent
   # TimeFilter provides filter_time plugin for Fluentd
   #
-  class Plugin::TimeFilter < Plugin::Filter
+  class TimeFilter < Filter
     Fluent::Plugin.register_filter('time', self)
 
     config_param :threshold, :integer, desc: <<~EODESC
