@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'fluent/plugin/time/filter'
+require 'fluent/plugin/filter_time'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

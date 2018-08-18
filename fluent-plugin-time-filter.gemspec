@@ -1,10 +1,6 @@
-lib = File.expand_path('lib', __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fluent/plugin/time/filter/version'
-
 Gem::Specification.new do |spec|
   spec.name          = 'fluent-plugin-time-filter'
-  spec.version       = Fluent::Plugin::Time::Filter::VERSION
+  spec.version       = '0.1.0'
   spec.authors       = ['autopp']
   spec.email         = ['autopp.inc@gmail.com']
 
