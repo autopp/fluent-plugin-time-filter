@@ -33,10 +33,9 @@ jobs:
       - run:
           name: run unit tests
           command: |
-            bundle exec rspec --format progress \
+            bundle exec rspec --format documentation \
                             --format RspecJunitFormatter \
-                            --out /tmp/test-results/rspec.xml \
-                            --format documentation
+                            --out /tmp/test-results/rspec.xml
 
       # run rubocop
       - run: bundle exec rubocop -D
