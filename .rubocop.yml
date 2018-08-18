@@ -75,3 +75,6 @@ Style/NumericPredicate:
 
 Bundler/OrderedGems:
   Enabled: false
+
+Gemspec/OrderedDependencies:
+  Enabled: false
