@@ -27,8 +27,15 @@ module Fluent
       Events whose timestamp is older than `threshold` seconds ago are filtered out.
     EODESC
 
-    def filter(_tag, time, record)
-      record if time >= Fluent::Engine.now - threshold
+    def filter(tag, time, record)
+      diff = Fluent::Engine.now - time
+      if diff <= threshold
+        record
+      else
+        log.debug('skipped record older than threshold',
+                  tag: tag, time: Time.at(time), over_sec: diff)
+        nil
+      end
     end
   end
 end
