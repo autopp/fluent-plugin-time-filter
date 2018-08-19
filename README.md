@@ -1,5 +1,8 @@
 # fluent-plugin-time-filter
 
+[![Gem Version](https://badge.fury.io/rb/fluent-plugin-time-filter.svg)](https://badge.fury.io/rb/fluent-plugin-time-filter)
+[![CircleCI](https://circleci.com/gh/autopp/fluent-plugin-time-filter/tree/master.svg?style=shield)](https://circleci.com/gh/autopp/fluent-plugin-time-filter/tree/master)
+
 ## Installation
 
 Add this line to your application's Gemfile:
