@@ -22,7 +22,7 @@ Or install it yourself as:
 ## Parameters
 
 | name | type | required? | description |
-|---|---|---|
+|---|---|---|---|
 | `@type` | string | yes | The value must be `time` |
 | `threshold` | integer | yes | Threshold for filtering by timestamp. Events whose timestamp is older than `threshold` seconds ago are filtered out. |
 
